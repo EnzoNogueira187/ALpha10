@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="Alpha10.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alpha 10 Informática - Especialistas em Conserto</title>
+</head>
+<body>
+    <header class="banner">
+        <h1>Alpha 10 Informática</h1>
+        <nav class="menu-principal">
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+            <a href="#avaliacoes">Avaliações</a>
+        </nav>
+    </header>
+
+    <section class="sobre-nos">
+        <h2>Nós da ALPHA 10 INFORMÁTICA somos especialistas em conserto de eletrônicos. Contamos com uma equipe altamente
+            qualificada para resolver qualquer problema que seu equipamento esteja apresentando.</h2>
+        <ul>
+            <li>Conserto de televisores: Imagens com falhas, tela preta, sem som? Deixamos sua TV novinha em folha!</li>
+            <li>Vendas de peças para PC: Amplo estoque de peças para montar ou atualizar o seu computador.</li>
+            <li>Manutenção de impressoras: Seja Epson, HP ou qualquer outra marca, sua impressora estará funcionando perfeitamente novamente.</li>
+            <li>Conserto de notebooks: Troca de tela, teclado, bateria... Temos a solução para o seu notebook.</li>
+        </ul>
+    </section>
+
+    <section id="servicos" class="servicos">
+        <div class="bloco-servico bloco1">
+            <div class="imagens-servico">
+                 <img src="EntregandoDesktop.png" alt="Entregando computador para a cliente">
+            </div>
+            <h3>NOTEBOOK & COMPUTADORES</h3>
+            <p>Seu equipamento merece o melhor cuidado! Nossa equipe de técnicos qualificados realiza serviços
+                completos de manutenção, incluindo troca de tela, reparos de placa, formatações e upgrades de SSD.
+                Oferecemos um atendimento personalizado e soluções eficientes para restaurar o desempenho do seu computador ou notebook.</p>
+        </div>
+        <div class="bloco-servico bloco2">
+            <div class="imagens-servico">
+                 <img src="EntregandoPcGamer.png" alt="Entregando computador para a cliente">
+            </div>
+            <h3>PC Gamer</h3>
+            <p>Leve seus jogos a outro nível! Nossa assistência técnica especializada garante que seu
+                PC Gamer tenha o máximo desempenho. Com troca de peças, reparos de placas e configurações personalizadas,
+                sua experiência de jogo será épica. Diga adeus às travadas e prepare-se para conquistas incríveis!</p>
+        </div>
+        <div class="bloco-servico bloco3">
+            <div class="imagens-servico">
+                 <img src="EntregandoTv.png" alt="Entregando computador para a cliente">
+            </div>
+            <h3>TVs LCD Led Smart</h3>
+            <p>Sua TV é a janela para o mundo — e nós garantimos que essa janela permaneça sempre nítida.
+                Nossa equipe técnica altamente qualificada realiza serviços completos de manutenção,
+                incluindo troca de tela, reparos de placas e reinstalação de software. Devolvemos ao seu
+                televisor a qualidade de imagem e desempenho que você merece.</p>
+        </div>
+        <div class="bloco-servico bloco4">
+            <div class="imagens-servico">
+                 <img src="EntregandoImpressora.png" alt="Entregando computador para a cliente">
+            </div>
+            <h3>Impressoras</h3>
+            <p>Está enfrentando problemas com sua impressora? A Alpha 10 Informática oferece soluções completas e eficientes.
+                Realizamos manutenção em todos os modelos, incluindo Ecotank e LaserJet, e trabalhamos com as principais marcas
+                do mercado, como Epson, HP, Canon, Samsung, entre outras. Com nossa equipe técnica especializada, sua impressora
+                volta a operar com desempenho e qualidade de impressão impecáveis.</p>
+        </div>
+    </section>
+
+    <section id="avaliacoes" class="carrossel-section">
+        <h2>O que nossos clientes dizem</h2>
+        <div class="carrossel">
+            <div class="lista-avaliacoes" id="lista-avaliacoes">
+                <div class="avaliacao">
+                    <p class="estrelas">⭐⭐⭐⭐⭐</p>
+                    <p class="texto-avaliacao">Trabalho de excelência na qualidade, no atendimento personalizado e acolhedor! ...</p>
+                </div>
+                <div class="avaliacao">
+                    <p class="estrelas">⭐⭐⭐⭐⭐</p>
+                    <p class="texto-avaliacao">Levei meu notebook para arrumar, foi feito testes tudo na minha frente, muito bem explicado  e o serviço ótimo...</p>
+                </div>
+                <div class="avaliacao">
+                    <p class="estrelas">⭐⭐⭐⭐⭐</p>
+                    <p class="texto-avaliacao">Foi excelente! Atendimento impecável! Cuidado e zelo com o equipamento consertado. Super indico!</p>
+                </div>
+                <div class="avaliacao">
+                    <p class="estrelas">⭐⭐⭐⭐⭐</p>
+                    <p class="texto-avaliacao">Muito bom, recomendo a todos. Levei minha impressora na Alpha 10 e resolveram rapidinho.</p>
+                </div>
+                <div class="avaliacao">
+                    <p class="estrelas">⭐⭐⭐⭐⭐</p>
+                    <p class="texto-avaliacao">Ótimo atendimento, serviço bem feito. Super indico.</p>
+                </div>
+            </div>
+            <button class="prev" onclick="mover(-1)">❮</button>
+            <button class="next" onclick="mover(1)">❯</button>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="footer-container">
+
+            <div class="footer-section contato">
+                <h3>📞 Contato</h3>
+                <p>Telefone:  (11) 99832-5461</p>
+                <p>Email: contato@alpha10inf.com.br</p>
+                <p>Atendimento: Seg à Sex - 9h às 18h</p>
+            </div>
+            <div class="footer-section pagamento">
+                <h3>💳 Formas de Pagamento</h3>
+                <div class="pagamentos-icones">
+                    <img src="https://cdn-icons-png.flaticon.com/512/349/349221.png" alt="Visa">
+                    <img src="https://cdn-icons-png.flaticon.com/512/349/349228.png" alt="Mastercard">
+                    <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Pix">
+                    <img src="https://cdn-icons-png.flaticon.com/512/349/349230.png" alt="PayPal">
+                </div>
+            </div>
+            <div class="footer-section localizacao">
+                <h3>📍 Localização</h3>
+                <p>Av. Tancredo de A. Neves, 975 - Cohab 5, <br>Carapicuíba - SP, 06329-350</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8417353209675!2d-46.826307625406756!3d-23.538194060740107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceffed757c801d%3A0x78a190016513512d!2sALPHA%2010%20INFORM%C3%81TICA!5e0!3m2!1spt-BR!2sbr!4v1761221014646!5m2!1spt-BR!2sbr" 
+                width="100%"
+                height="200"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>CNPJ: 05.781.093/0001-52</p>
+            <p>© 2025 Alpha 10 Informática | Todos os direitos reservados. | Desenvolvido por MPC</p>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
