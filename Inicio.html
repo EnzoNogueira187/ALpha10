@@ -2,10 +2,109 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/x-icon" href="Alpha10.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPHA 10 INFORMÁTICA - Serviços</title>
     <link rel="stylesheet" href="style.css">
-    <title>Alpha 10 Informática - Especialistas em Conserto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --cor-primaria: #4CAF50;
+            --cor-texto-escuro: #333;
+            --cor-texto-claro: #555;
+            --cor-fundo-card: #FFFFFF;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+            color: var(--cor-texto-escuro);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .introducao {
+            margin-top: 20px;
+            margin-bottom: 40px;
+            padding: 0 10px;
+        }
+
+        .introducao p {
+            font-size: 1.1em;
+            line-height: 1.5;
+            color: var(--cor-texto-claro);
+        }
+
+        .introducao strong {
+            color: var(--cor-primaria);
+        }
+
+        .serv-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: var(--cor-fundo-card);
+            border: 2px solid var(--cor-primaria);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: left;
+            width: calc(50% - 20px);
+            box-sizing: border-box;
+            display: flex;
+            align-items: flex-start;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-icon {
+            flex-shrink: 0;
+            margin-right: 15px;
+            padding-top: 5px;
+        }
+
+        .card-icon i {
+            font-size: 2.5em;
+            color: var(--cor-primaria);
+        }
+
+        .card-content {
+            flex-grow: 1;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: var(--cor-texto-escuro);
+        }
+
+        .card-content p {
+            margin: 0;
+            font-size: 0.95em;
+            line-height: 1.4;
+            color: var(--cor-texto-claro);
+        }
+
+        @media (max-width: 650px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="banner">
@@ -17,17 +116,49 @@
         </nav>
     </header>
 
-    <section class="sobre-nos">
-        <h2>Nós da ALPHA 10 INFORMÁTICA somos especialistas em conserto de eletrônicos. Contamos com uma equipe altamente
-            qualificada para resolver qualquer problema que seu equipamento esteja apresentando.</h2>
-        <ul>
-            <li>Conserto de televisores: Imagens com falhas, tela preta, sem som? Deixamos sua TV novinha em folha!</li>
-            <li>Vendas de peças para PC: Amplo estoque de peças para montar ou atualizar o seu computador.</li>
-            <li>Manutenção de impressoras: Seja Epson, HP ou qualquer outra marca, sua impressora estará funcionando perfeitamente novamente.</li>
-            <li>Conserto de notebooks: Troca de tela, teclado, bateria... Temos a solução para o seu notebook.</li>
-        </ul>
-    </section>
+    <div class="container">
+        <div class="introducao">
+            <p>Nós da <strong>ALPHA 10 INFORMÁTICA</strong> somos especialistas em conserto de eletrônicos. Contamos com uma equipe altamente qualificada para resolver qualquer problema que seu equipamento esteja apresentando.</p>
+        </div>
+        <div class="serv-grid">
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-screwdriver-wrench"></i> </div>
+                <div class="card-content">
+                    <h3>Conserto de Televisores:</h3>
+                    <p>Imagens com falhas, tela preta, sem som? Deixamos sua TV novinha em folha!</p>
+                </div>
+            </div>
 
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-microchip"></i> </div>
+                <div class="card-content">
+                    <h3>Vendas de peças para PC:</h3>
+                    <p>Amplo estoque de peças para montar ou atualizar o seu computador.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-print"></i> </div>
+                <div class="card-content">
+                    <h3>Manutenção de Impressoras:</h3>
+                    <p>Seja Epson, HP ou qualquer outra marca, sua impressora estará funcionando perfeitamente novamente.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-laptop-code"></i> </div>
+                <div class="card-content">
+                    <h3>Conserto de Notebooks:</h3>
+                    <p>Troca de tela, teclado, bateria... Temos a solução para o seu notebook e computador.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <section id="servicos" class="servicos">
         <div class="bloco-servico bloco1">
             <div class="imagens-servico">
